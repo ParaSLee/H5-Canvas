@@ -1,5 +1,5 @@
-var WIDTH = 1200;
-var HEIGHT = 800;
+var WIDTH = document.body.clientWidth;
+var HEIGHT = document.body.clientHeight;
 
 var ARC = null;
 var ARC2 = null;
@@ -50,7 +50,8 @@ function draw(context){
 	var backgraoundImg = new Image();
 	backgraoundImg.src = "bg2.jpg";
 
-	context.drawImage(backgraoundImg, 0, 0);
+	// context.drawImage(backgraoundImg, 0, 0);
+	context.drawImage(backgraoundImg, 0, 0, document.body.clientWidth, document.body.clientHeight);
 
 	context.closePath();
 
@@ -82,7 +83,7 @@ function draw(context){
 	var backgraoundImg = new Image();
 	backgraoundImg.src = "bg.jpg";
 
-	context.drawImage(backgraoundImg, 0, 0);
+	context.drawImage(backgraoundImg, 0, 0, document.body.clientWidth, document.body.clientHeight);
 
 
 
@@ -109,7 +110,8 @@ function draw(context){
 	var backgraoundImg = new Image();
 	backgraoundImg.src = "bg3.jpg";
 
-	context.drawImage(backgraoundImg, 0, 0);
+	// context.drawImage(backgraoundImg, 0, 0);
+	context.drawImage(backgraoundImg, 0, 0, document.body.clientWidth, document.body.clientHeight);
 
 
 
