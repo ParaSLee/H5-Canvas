@@ -2,7 +2,6 @@ var tangramSide = new Array();
 var context;
 
 
-
 window.onload=function(){
 	var canvas = document.querySelector("#canvas");
 	context = canvas.getContext("2d");
